@@ -8,7 +8,7 @@ with open(argv+".txt", 'r') as fileone, open('data.json', 'w') as filetwo:
     filetwo.write(data)
     filetwo.write(']')
 
-with open("data.json") as file:
+with open("data.json", 'r') as file:
     datan = json.load(file)
 
 with open(argv+".csv", "w") as file:
